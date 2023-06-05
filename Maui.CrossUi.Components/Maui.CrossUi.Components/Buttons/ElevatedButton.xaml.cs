@@ -4,7 +4,7 @@ using Microsoft.Maui.Handlers;
 
 namespace Maui.CrossUi.Components;
 
-public partial class ElevatedButton : Border
+public partial class ElevatedButton : Border 
 {
     #region Bindable Properties
 

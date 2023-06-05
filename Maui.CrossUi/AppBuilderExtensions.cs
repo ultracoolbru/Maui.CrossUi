@@ -1,6 +1,5 @@
 ﻿using Maui.CrossUi.Components;
-
-using Microsoft.Maui.Handlers;
+using Maui.CrossUi.Handlers;
 
 namespace Maui.CrossUi;
 
@@ -11,7 +10,7 @@ public static class AppBuilderExtensions
     {
         builder.ConfigureMauiHandlers(builder => builder
                    //.AddHandler<Label, CrossUiLabelHandler>()
-                   .AddHandler<ElevatedButton, IButtonHandler>()
+                   .AddHandler(typeof(ElevatedButton), typeof(IElevatedButtonHandler))
                    //.AddHandler<StackLayout, CrossUiStackLayoutHandler>()
                    //.AddHandler<Grid, CrossUiGridHandler>()
                    //.AddHandler<Frame, CrossUiFrameHandler>()
