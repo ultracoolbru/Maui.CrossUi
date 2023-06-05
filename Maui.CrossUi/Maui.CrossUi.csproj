@@ -15,6 +15,12 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<AssemblyVersion>1.2023.0605.10</AssemblyVersion>
+		<FileVersion>1.2023.0605.10</FileVersion>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Maui.CrossUi.Components\Maui.CrossUi.Components\Maui.CrossUi.Components.csproj" />
+	</ItemGroup>
 
 </Project>
